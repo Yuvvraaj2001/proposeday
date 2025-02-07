@@ -62,7 +62,6 @@ function drawText() {
   context.font = fontSize + "px Comic Sans MS";
   context.textAlign = "center";
 
-  // First message fades in and out
   if (frameNumber < 300) {
     context.fillStyle = `rgba(255, 255, 255, ${opacity})`;
     context.fillText(
@@ -82,9 +81,8 @@ function drawText() {
     opacity -= 0.01;
   }
 
-  if (frameNumber == 600) opacity = 0; // Reset opacity
+  if (frameNumber == 600) opacity = 0;
 
-  // Second message fades in and out
   if (frameNumber > 600 && frameNumber < 900) {
     context.fillStyle = `rgba(255, 255, 255, ${secondOpacity})`;
     context.fillText(
@@ -106,7 +104,6 @@ function drawText() {
 
   if (frameNumber == 1200) secondOpacity = 0;
 
-  // Third message fades in and out
   if (frameNumber > 1200 && frameNumber < 1500) {
     context.fillStyle = `rgba(255, 255, 255, ${thirdOpacity})`;
     context.fillText(
@@ -128,7 +125,6 @@ function drawText() {
 
   if (frameNumber == 1800) thirdOpacity = 0;
 
-  // Fourth message fades in
   if (frameNumber > 1800 && frameNumber < 2100) {
     context.fillStyle = `rgba(255, 255, 255, ${fourthOpacity})`;
     context.fillText(
