@@ -65,7 +65,7 @@ function drawText() {
   if (frameNumber < 300) {
     context.fillStyle = `rgba(255, 255, 255, ${opacity})`;
     context.fillText(
-      "Every day, I can't believe how lucky I am",
+      "Nishuu...Since the day I met you, I've realized how beautiful my life has become...",
       canvas.width / 2,
       canvas.height / 2
     );
@@ -74,7 +74,7 @@ function drawText() {
   if (frameNumber >= 300 && frameNumber < 600) {
     context.fillStyle = `rgba(255, 255, 255, ${opacity})`;
     context.fillText(
-      "Every day, I can't believe how lucky I am",
+      "Nishuu...Since the day I met you, I've realized how beautiful my life has become...",
       canvas.width / 2,
       canvas.height / 2
     );
@@ -86,7 +86,7 @@ function drawText() {
   if (frameNumber > 600 && frameNumber < 900) {
     context.fillStyle = `rgba(255, 255, 255, ${secondOpacity})`;
     context.fillText(
-      "Amongst trillions of stars, over billions of years",
+      "I, for my entire life, want to cherish every moment with you",
       canvas.width / 2,
       canvas.height / 2
     );
@@ -95,7 +95,7 @@ function drawText() {
   if (frameNumber >= 900 && frameNumber < 1200) {
     context.fillStyle = `rgba(255, 255, 255, ${secondOpacity})`;
     context.fillText(
-      "Amongst trillions of stars, over billions of years",
+      "I, for my entire life, want to cherish every moment with you",
       canvas.width / 2,
       canvas.height / 2
     );
@@ -137,7 +137,7 @@ function drawText() {
   if (frameNumber >= 2100) {
     context.fillStyle = `rgba(255, 255, 255, ${fourthOpacity})`;
     context.fillText(
-      "If yes, please send me a ❤️ with a big YES!!!",
+      "I know that you don't like online proposals, but if yes, please send me a ❤️ with a big YES!!!",
       canvas.width / 2,
       canvas.height / 2 + 50
     );
