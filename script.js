@@ -25,6 +25,7 @@ var frameNumber = 0;
 var opacity = 0;
 var secondOpacity = 0;
 var thirdOpacity = 0;
+var fourthOpacity = 0;
 
 var baseFrame = context.getImageData(
   0,
@@ -53,7 +54,7 @@ function updateStars() {
   }
 }
 
-// Function to display text messages
+// Function to display text messages in sequence
 function drawText() {
   var fontSize = Math.min(30, window.innerWidth / 25);
   var lineHeight = 8;
@@ -61,28 +62,93 @@ function drawText() {
   context.font = fontSize + "px Comic Sans MS";
   context.textAlign = "center";
 
-  if (frameNumber < 99999) {
+  // First message fades in and out
+  if (frameNumber < 300) {
     context.fillStyle = `rgba(255, 255, 255, ${opacity})`;
     context.fillText(
-      "Will you be forever mine?",
+      "Every day, I can't believe how lucky I am",
       canvas.width / 2,
       canvas.height / 2
     );
     opacity += 0.01;
   }
+  if (frameNumber >= 300 && frameNumber < 600) {
+    context.fillStyle = `rgba(255, 255, 255, ${opacity})`;
+    context.fillText(
+      "Every day, I can't believe how lucky I am",
+      canvas.width / 2,
+      canvas.height / 2
+    );
+    opacity -= 0.01;
+  }
 
-  if (frameNumber >= 3300 && frameNumber < 99999) {
+  if (frameNumber == 600) opacity = 0; // Reset opacity
+
+  // Second message fades in and out
+  if (frameNumber > 600 && frameNumber < 900) {
     context.fillStyle = `rgba(255, 255, 255, ${secondOpacity})`;
+    context.fillText(
+      "Amongst trillions of stars, over billions of years",
+      canvas.width / 2,
+      canvas.height / 2
+    );
+    secondOpacity += 0.01;
+  }
+  if (frameNumber >= 900 && frameNumber < 1200) {
+    context.fillStyle = `rgba(255, 255, 255, ${secondOpacity})`;
+    context.fillText(
+      "Amongst trillions of stars, over billions of years",
+      canvas.width / 2,
+      canvas.height / 2
+    );
+    secondOpacity -= 0.01;
+  }
+
+  if (frameNumber == 1200) secondOpacity = 0;
+
+  // Third message fades in and out
+  if (frameNumber > 1200 && frameNumber < 1500) {
+    context.fillStyle = `rgba(255, 255, 255, ${thirdOpacity})`;
+    context.fillText(
+      "To be alive and to spend this life with you",
+      canvas.width / 2,
+      canvas.height / 2
+    );
+    thirdOpacity += 0.01;
+  }
+  if (frameNumber >= 1500 && frameNumber < 1800) {
+    context.fillStyle = `rgba(255, 255, 255, ${thirdOpacity})`;
+    context.fillText(
+      "To be alive and to spend this life with you",
+      canvas.width / 2,
+      canvas.height / 2
+    );
+    thirdOpacity -= 0.01;
+  }
+
+  if (frameNumber == 1800) thirdOpacity = 0;
+
+  // Fourth message fades in
+  if (frameNumber > 1800 && frameNumber < 2100) {
+    context.fillStyle = `rgba(255, 255, 255, ${fourthOpacity})`;
+    context.fillText(
+      "Will you be forever mine?",
+      canvas.width / 2,
+      canvas.height / 2
+    );
+    fourthOpacity += 0.01;
+  }
+  if (frameNumber >= 2100) {
+    context.fillStyle = `rgba(255, 255, 255, ${fourthOpacity})`;
     context.fillText(
       "If yes, please send me a ❤️ with a big YES!!!",
       canvas.width / 2,
       canvas.height / 2 + 50
     );
-    secondOpacity += 0.01;
+    fourthOpacity += 0.01;
   }
 
-  if (frameNumber >= 3600) {
-    thirdOpacity += 0.01;
+  if (frameNumber >= 2400) {
     showHeart();
   }
 }
