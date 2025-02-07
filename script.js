@@ -65,7 +65,7 @@ function drawText() {
   if (frameNumber < 300) {
     context.fillStyle = `rgba(255, 255, 255, ${opacity})`;
     context.fillText(
-      "Nishuu 💌...Since the day I met you, I've realized how beautiful my life has become😘...",
+      "Nishuu 💌...ince I met you, life has been beautiful.😘...",
       canvas.width / 2,
       canvas.height / 2
     );
@@ -74,7 +74,7 @@ function drawText() {
   if (frameNumber >= 300 && frameNumber < 600) {
     context.fillStyle = `rgba(255, 255, 255, ${opacity})`;
     context.fillText(
-      "Nishuu 💌...Since the day I met you, I've realized how beautiful my life has become😘...",
+      "Nishuu 💌...Since I met you, life has been beautiful.😘...",
       canvas.width / 2,
       canvas.height / 2
     );
