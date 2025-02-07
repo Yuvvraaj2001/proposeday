@@ -65,7 +65,7 @@ function drawText() {
   if (frameNumber < 300) {
     context.fillStyle = `rgba(255, 255, 255, ${opacity})`;
     context.fillText(
-      "Nishuu❤️...Since the day I met you, I've realized how beautiful my life has become😘...",
+      "Nishuu 💌...Since the day I met you, I've realized how beautiful my life has become😘...",
       canvas.width / 2,
       canvas.height / 2
     );
@@ -74,7 +74,7 @@ function drawText() {
   if (frameNumber >= 300 && frameNumber < 600) {
     context.fillStyle = `rgba(255, 255, 255, ${opacity})`;
     context.fillText(
-      "Nishuu❤️...Since the day I met you, I've realized how beautiful my life has become😘...",
+      "Nishuu 💌...Since the day I met you, I've realized how beautiful my life has become😘...",
       canvas.width / 2,
       canvas.height / 2
     );
@@ -86,7 +86,7 @@ function drawText() {
   if (frameNumber > 600 && frameNumber < 900) {
     context.fillStyle = `rgba(255, 255, 255, ${secondOpacity})`;
     context.fillText(
-      "I, for my entire life, want to cherish every moment with you💖",
+      "I, for my entire life, want to cherish every moment💗 with you💖",
       canvas.width / 2,
       canvas.height / 2
     );
@@ -95,7 +95,7 @@ function drawText() {
   if (frameNumber >= 900 && frameNumber < 1200) {
     context.fillStyle = `rgba(255, 255, 255, ${secondOpacity})`;
     context.fillText(
-      "I, for my entire life, want to cherish every moment with you💖",
+      "I, for my entire life, want to cherish every moment💗 with you💖",
       canvas.width / 2,
       canvas.height / 2
     );
@@ -107,7 +107,7 @@ function drawText() {
   if (frameNumber > 1200 && frameNumber < 1500) {
     context.fillStyle = `rgba(255, 255, 255, ${thirdOpacity})`;
     context.fillText(
-      "To be alive and to spend this life with you😘",
+      "To be alive 💕 and to spend this life with you😘",
       canvas.width / 2,
       canvas.height / 2
     );
@@ -116,7 +116,7 @@ function drawText() {
   if (frameNumber >= 1500 && frameNumber < 1800) {
     context.fillStyle = `rgba(255, 255, 255, ${thirdOpacity})`;
     context.fillText(
-      "To be alive and to spend this life with you😘",
+      "To be alive 💕and to spend this life with you😘",
       canvas.width / 2,
       canvas.height / 2
     );
@@ -128,7 +128,7 @@ function drawText() {
   if (frameNumber > 1800 && frameNumber < 2100) {
     context.fillStyle = `rgba(255, 255, 255, ${fourthOpacity})`;
     context.fillText(
-      "Will you be forever mine?",
+      "Will you be forever mine💘?",
       canvas.width / 2,
       canvas.height / 2
     );
